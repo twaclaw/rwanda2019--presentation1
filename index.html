@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>The Democratization of Data, Information and Knowledge</title>
+		<subtitle>Open source, Open Hardware, Open Data, Open Knowledge, Open *</subtitle>
 
 		<link rel="stylesheet" href="revealjs/css/reveal.css">
 		<link rel="stylesheet" href="revealjs/css/theme/black.css">
@@ -24,8 +25,19 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					$$ \alpha = \gamma^2 $$
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Page title
+				
+						A paragraph with some text and a [link](http://hakim.se).
+
+						`$$ \alpha = \gamma^2 $$`
+
+					</textarea>
+				</section>
 			</div>
 		</div>
 
@@ -37,7 +49,12 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+				},
 				dependencies: [
+					{src: 'revealjs/plugin/math/math.js', async: true}, 
 					{ src: 'revealjs/plugin/markdown/marked.js' },
 					{ src: 'revealjs/plugin/markdown/markdown.js' },
 					{ src: 'revealjs/plugin/notes/notes.js', async: true },
