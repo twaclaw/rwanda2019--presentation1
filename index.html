@@ -485,7 +485,7 @@
 					<img src="images/comic_elearning.jpeg" height="500" style="border:0;background:none">
 				</section>
 				<section>
-					Do I have to become a programmer or a data scientists?
+					Do I have to become a programmer or a data scientist?
 					<pre class="c"><code>
 long long time; //ago in a galaxy far away...
 				</code></pre>
@@ -503,7 +503,7 @@ long long time; //ago in a galaxy far away...
 				<section data-markdown>
 					<textarea data-template>
 							### Reinventing your self
-							* In the same way as adopting open-source can help an organization to save money, or to redirect the investments
+							* In the same way as adopting open-source can help organizations to save money, or to redirect the investments
 							* This super power can help you to better use your time
 								* In this sense, programming is for lazy people
 						</textarea>
@@ -513,15 +513,15 @@ long long time; //ago in a galaxy far away...
 					<h4>Learning German</h4>
 					<table style="font-size:20px">
 						<tbody>
-							<tr>
+							<tr class="fragment">
 								<td>Butterfly</td>
 								<td>der Schmetterling</td>
 							</tr>
-							<tr>
+							<tr class="fragment">
 								<td>die Rechtsschutzversicherungsgesellschaft</td>
 								<td>Insurance company providing legal protection</td>
 							</tr>
-							<tr>
+							<tr class="fragment">
 								<td>to go</td>
 								<td>gehen, geht, ist gegangen</td>
 							</tr>
@@ -531,11 +531,12 @@ long long time; //ago in a galaxy far away...
 				<section>
 					<h3>Examples</h3>
 					How Python and LaTeX can save your life?<br>
-					<img class="fragment fade-in" src="images/howimetyourmother.png" width="300" height="150" style="border:0px;background:none">
+					<img class="fragment fade-in" src="images/howimetyourmother.png" width="300" height="150"
+						style="border:0px;background:none">
 				</section>
 				<section>
 					<h3>Example</h3>
-					<h4>Portfolio screening</h4>
+					<h4><a href="https://www.uvek-gis.admin.ch/BFE/sonnendach/?lang=en">Rooftop solar potential</a></h4>
 				</section>
 
 				<section>
@@ -614,10 +615,38 @@ long long time; //ago in a galaxy far away...
 									# ?
 								</textarea>
 				</section>
+				<section data-markdown data-background-color="#ffd700">
+					<textarea data-template>
+									# Murakoze!
+								</textarea>
+				</section>
+			
 			</section>
 			<section>
 				<section data-background-color="#66CDAA">
 					<h1>LoRaWAN</h1>
+					<h3>Demo</h3>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Tradeoff
+						Usually, communication technologies feature two out of three characteristics:<br>
+						*	Long range
+						*	Low power consumption (low cost)
+						*	High bandwidth, high throughput 
+					</textarea>
+				</section>
+				<section>
+					<h3>Community operated networks</h3>
+					There are several competing technologies. One aspect that makes LoRaWAN interesting is the fact
+					that you do not depend on an operator, you can create your own networks
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+								[The Things Network](https://www.thethingsnetwork.org/)
+								<br>
+							<img src="images/ttn.png" height="400" style="border:0;background:none">
+							</textarea>
 				</section>
 			</section>
 		</div>
@@ -631,6 +660,7 @@ long long time; //ago in a galaxy far away...
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
 		Reveal.initialize({
+			progress: false,
 			math: {
 				mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
 				config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
